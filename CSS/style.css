@@ -1,0 +1,90 @@
+.carImage{
+    border-radius: 12px;
+    height:80vh ;
+}
+.col-md-4{
+    padding-top: 20px;
+    border-radius: 12px;
+}
+.col-md-4 h4{
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.col-md-4 p{
+    text-align: center;
+    font-size: 0.9em;
+    text-wrap: balance;
+}
+.fa-regular,.fa-solid{
+    color: var(--tartiary-color);
+    font-size: 2rem;
+    font-weight: 800;
+
+}
+.about{
+    position: relative;
+    padding-top: 50px;
+}
+
+.about h2{
+    color: var(--tartiary-color);
+    font-weight: 700;
+    font-size: 1.9em;
+}
+.about h2::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: var(--secondary-color);
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+.about h2::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--primary-color);
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+.about p{
+    font-size: 0.85em;
+    font-weight: 600;
+}
+.col-lg-6{
+    border-radius:12px ;
+    border-top: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    border-inline: 2px solid var(--tartiary-color);
+    margin: 20px 0px;
+    
+}
+.col-lg-6 h4{
+    color: var(--primary-color);
+    font-weight: 700;
+}
+.col-md-6 .ab-item{
+    font-size: 0.86em;
+}
+.Testimonial span{
+    
+    font-family: 'Arialic Hollow-Gem', sans-serif; 
+    font-size: 5rem;
+    font-weight: 900;
+    color: transparent;
+   -webkit-text-stroke: 2px var(--tartiary-color);
+    text-stroke: 2px var(--tartiary-color);
+}
+@media (max-width:430px) {
+    .carImage{
+        height: 50vh !important;
+    }
+    .Testimonial span{
+        font-size: 2rem;
+    }
+}
