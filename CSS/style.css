@@ -1,6 +1,4 @@
-.carImage{
-    height:80vh ;
-}
+
 .carousel-caption {
     position: absolute;
     top: 50%;
@@ -101,11 +99,12 @@
     .testimonCol{
         flex-direction: column-reverse;
     }
+    .carImage{
+        height: 34vh !important;
+    }
 }
 @media (max-width:430px) {
-    .carImage{
-        height: 30vh !important;
-    }
+   
     .Testimonial span{
         font-size: 2rem;
     }
@@ -116,12 +115,12 @@
         font-size: 0.6em !important;
     }
     .carousel-caption{
-        top: 20%;
+        top: 30%;
         left: 20%;
         transform: translate(-20%, -20%);
     }
     .carousel-caption h3{
-        font-size: 1em;
+        font-size: 1.4em;
         width: 100%;
     }
     .carousel-caption h4{
