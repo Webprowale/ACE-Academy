@@ -2,6 +2,24 @@
     border-radius: 12px;
     height:80vh ;
 }
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -30%);
+    text-align: left;
+}
+.carousel-caption h3{
+    font-family: 'Arialic Hollow-Gem', sans-serif; 
+    font-size: 4em;
+    font-weight: 900;
+    color: var(--white-color);
+}
+.carousel-caption p{
+    color:var(--primary-color);
+   font-weight: 400;
+    font-size: 1.2em;
+}
 .col-md-4{
     padding-top: 20px;
     border-radius: 12px;
@@ -13,7 +31,7 @@
 }
 .col-md-4 p{
     text-align: center;
-    font-size: 0.9em;
+    font-size: 0.8em;
     text-wrap: balance;
 }
 .fa-regular,.fa-solid{
@@ -52,24 +70,24 @@
     bottom: 0;
     left: calc(50% - 20px);
 }
-.about p{
+.aboutP{
     font-size: 0.85em;
-    font-weight: 600;
+    font-weight: 400;
 }
-.col-lg-6{
+.subCol{
     border-radius:12px ;
     border-top: 2px solid var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
     border-inline: 2px solid var(--tartiary-color);
     margin: 20px 0px;
-    
+    padding: 15px;
 }
-.col-lg-6 h4{
+.subCol h4{
     color: var(--primary-color);
     font-weight: 700;
 }
-.col-md-6 .ab-item{
-    font-size: 0.86em;
+.subCol .ab-item{
+    font-size: 0.8em;
 }
 .Testimonial span{
     
@@ -80,11 +98,34 @@
    -webkit-text-stroke: 2px var(--tartiary-color);
     text-stroke: 2px var(--tartiary-color);
 }
+@media (max-width:834px) {
+    .testimonCol{
+        flex-direction: column-reverse;
+    }
+}
 @media (max-width:430px) {
     .carImage{
-        height: 50vh !important;
+        height: 30vh !important;
     }
     .Testimonial span{
         font-size: 2rem;
+    }
+    .aboutP{
+        font-size: 0.65em;
+    }
+    .subCol .ab-item{
+        font-size: 0.6em !important;
+    }
+    .carousel-caption{
+        top: 20%;
+        left: 20%;
+        transform: translate(-20%, -20%);
+    }
+    .carousel-caption h3{
+        font-size: 1em;
+        width: 100%;
+    }
+    .carousel-caption h4{
+        font-size: 0.6em;
     }
 }

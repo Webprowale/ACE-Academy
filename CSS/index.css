@@ -15,6 +15,8 @@
 }
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: var(--white-color);
+  overflow-x: hidden;
 }
 .navbar-brand .fa-solid{
  color:var(--tartiary-color);
@@ -63,4 +65,24 @@ body {
     font-size: 0.8em;
     font-family: var(--head-font);
     text-decoration: none;
+}
+.btn-hero{
+  background-color:#E8E7FA;
+  color: var(--primary-color);
+  padding: 10px 20px;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  display: none;
+}
+.textP{
+  color: var(--primary-color);
+  font-size: 1.4em;
+  font-weight: 600;
+}
+.textPmin{
+  color: var(--primary-color);
+  font-size: 1em;
+  font-weight: 600;
 }
